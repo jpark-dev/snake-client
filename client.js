@@ -18,11 +18,10 @@ const connect = function() {
     //   conn.write('Move: left');
     // }, 50)
   }); 
-
   conn.on('data', (data) => {
     console.log(data);
   });
   return conn;
-}
+};
 
 module.exports = connect;
